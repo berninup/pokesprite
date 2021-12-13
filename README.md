@@ -21,7 +21,7 @@ Pokesprite is a Pokemon sprite search. Type in your desired pokemon and a sprite
 
 - A crafted selection of sprites
 
-![https://i.imgur.com/68fhGbX.png](Add shinies)
+![Add shinies](https://i.imgur.com/68fhGbX.png)
  
 - Add shiney comparison
 
