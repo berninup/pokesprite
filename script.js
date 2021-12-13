@@ -9,10 +9,26 @@ function getMon(evt) {
     evt.preventDefault();
     let userInput = $input.val().toLowerCase();
 
-    $.ajax(pokeApi + userInput).then(function (data){
+    $('div.spriteContainer').replaceWith('<div class="spriteContainer"></div>')
+
+    $.ajax(pokeApi + userInput).then(function (data) {
         console.log(data);
+
+        spriteURL = JSON.stringify(data.sprites.front_default);
+
+        console.log(spriteURL);
+        $('div.spriteContainer').replaceWith(`
+
+        <div class = "spriteContainer">
+            <div>
+                <img src = ${spriteURL}>
+            </div>
+        </div>
+
+        `);
+        $('form')[0].reset();
     });
-    
+
 
 };
 
