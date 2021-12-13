@@ -15,13 +15,16 @@ function getMon(evt) {
         console.log(data);
 
         spriteURL = JSON.stringify(data.sprites.front_default);
-
+        spriteShinyURL = JSON.stringify(data.sprites.front_shiny)
         console.log(spriteURL);
         $('div.spriteContainer').replaceWith(`
 
         <div class = "spriteContainer">
             <div>
                 <img src = ${spriteURL}>
+            </div>
+            <div>
+                <img src = ${spriteShinyURL}>
             </div>
         </div>
 
