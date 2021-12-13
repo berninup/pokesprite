@@ -1,13 +1,18 @@
 
-const pokeApi = "https://pokeapi.co/api/v2/pokemon/bulbasaur";
+const pokeApi = "https://pokeapi.co/api/v2/pokemon/";
+$form = $('form');
+$input = $('input[type = "text"]');
 
+$form.on("submit", getMon);
 
 function getMon(evt) {
+    evt.preventDefault();
+    let userInput = $input.val().toLowerCase();
 
-
-    $.ajax(pokeApi).then(function(data){
-        console.log(data)
+    $.ajax(pokeApi + userInput).then(function (data){
+        console.log(data);
     });
-
+    
 
 };
+
