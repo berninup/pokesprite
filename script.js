@@ -1,23 +1,35 @@
 
-const pokeApi = "https://pokeapi.co/api/v2/pokemon/";
-$form = $('form');
-$input = $('input[type = "text"]');
 
+// Variables 
+const pokeApi = "https://pokeapi.co/api/v2/pokemon/";
+const $form = $('form');
+const $input = $('input[type = "text"]');
+
+// Event listeners
 $form.on("submit", getMon);
+
+// functions
 
 function getMon(evt) {
     evt.preventDefault();
     let userInput = $input.val().toLowerCase();
-
+    $('form')[0].reset();
     $('div.spriteContainer').replaceWith('<div class="spriteContainer"></div>')
 
     $.ajax(pokeApi + userInput).then(function (data) {
-        console.log(data);
+        render(data);
 
-        spriteURL = JSON.stringify(data.sprites.front_default);
-        spriteShinyURL = JSON.stringify(data.sprites.front_shiny)
-        console.log(spriteURL);
-        $('div.spriteContainer').replaceWith(`
+    }, function (error) {
+        alert("Uh oh. Something went wrong.")
+
+    });
+};
+
+function render(pokeData) {
+    spriteURL = JSON.stringify(pokeData.sprites.front_default);
+    spriteShinyURL = JSON.stringify(pokeData.sprites.front_shiny)
+    console.log(spriteURL);
+    $('div.spriteContainer').replaceWith(`
 
         <div class = "spriteContainer">
             <div>
@@ -29,9 +41,5 @@ function getMon(evt) {
         </div>
 
         `);
-        $('form')[0].reset();
-    });
-
 
 };
-
