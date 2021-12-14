@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+       
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1;
+    
+}
+
+form {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+
+.spriteContainer {
+    grid-column: 2/3;
+    grid-row: 3;
+    display: flex;
+    margin-top: 3rem;
+  
+
+    /* flex-wrap: nowrap; */
+    /* justify-content: center; */
+   
+    
+}
