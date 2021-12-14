@@ -12,8 +12,6 @@ body {
     grid-column: 2/3;
     grid-row: 1;
     margin-top: 5%;
-    
-    
 }
 
 h1 {
@@ -39,6 +37,7 @@ h1 {
     7px 6px 1px #5dabcd,
     7px 8px 0px #378ab4,
     8px 7px 0px #5dabcd;
+    /* text shawdow generated from https://html-css-js.com/css/generator/text-shadow/ */
 }
 
 form {
@@ -46,18 +45,10 @@ form {
     grid-row: 2;
 }
 
-
 .spriteContainer {
     grid-column: 2/3;
     grid-row: 3;
     display: flex;
     margin-top: 3rem;
     justify-content: space-around;
-    
-  
-
-    /* flex-wrap: nowrap; */
-    /* justify-content: center; */
-   
-    
 }
