@@ -35,6 +35,7 @@ function render(pokeData) {
             <div>
                 <img src = ${spriteURL}>
             </div>
+            <h3>${pokeData.name.toUpperCase()}</h3>
             <div>
                 <img src = ${spriteShinyURL}>
             </div>
