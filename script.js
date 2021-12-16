@@ -1,5 +1,3 @@
-
-
 // Variables 
 const pokeApi = "https://pokeapi.co/api/v2/pokemon/";
 const $form = $('form');
@@ -8,8 +6,7 @@ const $input = $('input[type = "text"]');
 // Event listeners
 $form.on("submit", getMon);
 
-// functions
-
+// Functions
 function getMon(evt) {
     evt.preventDefault();
     let userInput = $input.val().toLowerCase();

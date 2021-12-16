@@ -2,26 +2,25 @@
 
 ## Pokemon sprite search
 
-Pokesprite is a Pokemon sprite search. Type in your desired pokemon and a sprite will be delivered.
+Pokesprite is a Pokemon sprite search. Submit your desired pokemon and a sprite of the normal and shiny will be shown.
 
 
-### Project Goals
+## Landing Page
 
-![Pokesprite landing page](https://i.imgur.com/UMfJTym.png)
+![Landing Page](https://i.imgur.com/75UZFze.png)
 
-- Pokesprite aims to have a simple "landing page".
+## Search
 
-![Pokesprite search](https://i.imgur.com/N2sriDj.png)
+![Search Complete](https://i.imgur.com/IDfE8Fo.png)
 
-- Pokesprite search complete
 
-### Stretch Goals
+## Technologies Used
 
-![Multiple sprites](https://i.imgur.com/HnKfd5H.png)
+- HTML
+- CSS
+- Javascript
+- jQuery
 
-- A crafted selection of sprites
+## LINK
 
-![Add shinies](https://i.imgur.com/68fhGbX.png)
- 
-- Add shiney comparison
-
+[PokeSprite](https://poke-sprite.netlify.app/)]
